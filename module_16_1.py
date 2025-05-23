@@ -14,7 +14,7 @@ async def admin_page() -> dict:
 @app.get("/user/{user_id}")
 async def read_user(user_id: int)-> dict:
     return {'user': f'Вы вошли как пользователь № {user_id}'}
-# Маршрут с параметрами запроса
+# Маршрут с параметрами  запроса
 @app.get('/user')
 async def user_info(username: str, age: int)-> dict:
     return {'user': f'Информация о пользователе. Имя: {username}, Возраст: {age}'}
